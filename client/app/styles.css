@@ -1,0 +1,96 @@
+.frontpage {
+    background-image: url(http://i.imgur.com/gTEDc6x.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.welcome {
+    font-size: 50px;
+    color: goldenrod;
+    font-family: 'Diavlo', Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    top: 50%;
+}
+
+.frontdoor { 
+    font-family: 'Diavlo', Arial, Helvetica, sans-serif;
+    border: 2px whitesmoke;
+    border-style: dotted solid;
+    border-radius: 15px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5px;
+    background-image: url(https://ak5.picdn.net/shutterstock/videos/7320109/thumb/1.jpg);
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+}
+#rank{
+    color: goldenrod;
+    font-family: 'Diavlo', Arial, Helvetica, sans-serif;
+    border: 2px dotted whitesmoke;
+    text-align: center;
+    margin: auto;
+    margin-top: 5px;
+    background-image: url(https://ak5.picdn.net/shutterstock/videos/7320109/thumb/1.jpg);
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+}
+
+.username {
+    font-size: 40px;
+    color: goldenrod;
+    font-family: 'Diavlo', Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    width: 50%;
+    padding: 5px;
+    text-align: center;
+}
+
+.alias {
+    font-size: 40px;
+    color: goldenrod;
+    font-family: 'Diavlo', Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+.message {
+    font-size: 24px;
+    color: goldenrod;
+    font-family: 'Diavlo', Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+}
+
+.email{
+    width: 25%;
+    left: 10em;
+}
+
+.textarea{font-size: 24px;
+    color: goldenrod;
+    font-family: 'Diavlo', Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    display:block;
+    padding:3px;
+    margin-top: 3px;
+    background-image: url(https://ak5.picdn.net/shutterstock/videos/7320109/thumb/1.jpg);
+
+}
+
+.validate{
+    font-size: 24px;
+    color: goldenrod;
+}
