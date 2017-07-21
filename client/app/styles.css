@@ -1,7 +1,13 @@
 .frontpage {
-    background-image: url(http://i.imgur.com/gTEDc6x.png);
-    background-size: 100%;
+    background-image: url(http://www.imgbase.info/images/safe-wallpapers/video_games/warframe/53350_warframe.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
+}
+
+.optionbutton {
+    background-image: url(https://ak5.picdn.net/shutterstock/videos/7320109/thumb/1.jpg);
+    float: right;
+    font-size: 15px;
 }
 
 .welcome {
@@ -41,7 +47,7 @@
     text-decoration: none;
 }
 
-.username {
+.user {
     font-size: 40px;
     color: goldenrod;
     font-family: 'Diavlo', Arial, Helvetica, sans-serif;
@@ -61,6 +67,11 @@
     text-align: center;
 }
 
+.listinfo{
+    color: goldenrod;
+    font-family: 'Diavlo', Arial, Helvetica, sans-serif;
+}
+
 .message {
     font-size: 24px;
     color: goldenrod;
@@ -76,7 +87,7 @@
     left: 10em;
 }
 
-.textarea{font-size: 24px;
+.textarea{font-size: 20px;
     color: goldenrod;
     font-family: 'Diavlo', Arial, Helvetica, sans-serif;
     margin: 0 auto;
@@ -93,4 +104,27 @@
 .validate{
     font-size: 24px;
     color: goldenrod;
+}
+
+.center{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.redirect {
+    width:30%;
+    padding: 10px;
+    display: inline-block;
+}
+
+.redirect2 {
+    width: 35%;
+    padding: 10px;
+    display: inline-block;
+}
+
+.posts{
+    background-image: url(https://s-media-cache-ak0.pinimg.com/originals/69/d5/98/69d59852f328dca744e56e727bd7e8b1.jpg);
+    height: 100%;
 }

@@ -1,7 +1,16 @@
-<h1 class="welcome">Welcome to the Outer Rim Tenno...</h1>
-<a href= "#/add">
-    <button class="frontdoor" >Enter The Dark Sector</button> 
+<h2 class= "welcome" >Single Post</h2>
+<div class="posts" ng-controller="singleController" style="border: 2px solid goldenrod; border-right-width:20px; margin-top: 5px" >
+    
+    <h3 class= "listinfo">Tenno: {{data.alias}}</h3>
+        <button ng-click="remove(data.id)" type="submit" value="submit" class="optionbutton">[x]</button>
+        
+    <h5 class= "listinfo">User: {{data.user}}</h1>
+    <p class= "listinfo">Message: {{data.message}}</div>
+</div>
+<a href="#/list">
+        <button type="submit" value="submit" class="frontdoor" class="frontdoor">Return to the Darksecter</button>
 </a>
+
 <div class="center">
     <a href="https://www.reddit.com/r/Warframe/">
         <img class="redirect" src="https://vignette4.wikia.nocookie.net/warframe/images/d/d2/MasterBadge.png/revision/latest?cb=20130711224536" alt="Warframe.com">

@@ -1,1 +1,28 @@
-<div></div>
+<div  ng-controller="listController">
+    <h1 class= "welcome">Welcome Tenno</h1>
+    <ul>
+        <li class="posts" style="border: 2px solid goldenrod; border-right-width:20px; margin-top: 5px" ng-repeat="post in data">
+            <h3 class= "listinfo">Tenno: {{post.alias}} 
+                    <button ng-click="getId(post.id)" type="submit" value="submit" class="otherbutton">[i]</button>
+                    <button ng-click="remove(post.id)" type="submit" value="submit" class="optionbutton">[x]</button>
+            <h5 class= "listinfo">User: {{post.user}}</h1>
+            <p class= "listinfo">Message: {{post.message}}</div>
+        </li>
+    </ul>
+</div>
+
+<a href="#/add">
+        <button type="submit" value="submit" class="frontdoor" class="frontdoor">Add a post</button>
+</a>
+
+<div class="center">
+    <a href="https://www.reddit.com/r/Warframe/">
+        <img class="redirect" src="https://vignette4.wikia.nocookie.net/warframe/images/d/d2/MasterBadge.png/revision/latest?cb=20130711224536" alt="Warframe.com">
+    </a>
+    <a href="https://www.warframe.com/">
+        <img class="redirect2" src="http://www.stickpng.com/assets/images/58a1fbccc8dd3432c6fa8214.png" alt="Warframe.com">
+    </a>
+    <a href="http://warframe.wikia.com/wiki/WARFRAME_Wiki">
+        <img class="redirect" src="http://images2.wikia.nocookie.net/warframe/images/2/2d/HunterBadge.png" alt="warframe.wiki">
+    </a>
+</div>
