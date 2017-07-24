@@ -1,12 +1,19 @@
 .frontpage {
-    background-image: url(http://www.imgbase.info/images/safe-wallpapers/video_games/warframe/53350_warframe.jpg);
+    background-image: url(http://www.imgbase.info/images/safe-wallpapers/video_games/warframe/56115-warframe_wallpaper.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+.banner{
+    background-image: url(http://eachdaypaid.com/wp-content/uploads/2014/12/carbon-fiber-1024x576.png)
+}
+
+.navbuttons{
+    color: goldenrod;
+}
+
 .optionbutton {
     background-image: url(https://ak5.picdn.net/shutterstock/videos/7320109/thumb/1.jpg);
-    float: right;
     font-size: 15px;
 }
 
@@ -103,6 +110,7 @@
 
 .validate{
     font-size: 24px;
+    font-family: 'Diavlo', Arial, Helvetica, sans-serif;
     color: goldenrod;
 }
 
@@ -125,6 +133,16 @@
 }
 
 .posts{
-    background-image: url(https://s-media-cache-ak0.pinimg.com/originals/69/d5/98/69d59852f328dca744e56e727bd7e8b1.jpg);
+    background-image: url(http://eachdaypaid.com/wp-content/uploads/2014/12/carbon-fiber-1024x576.png);
     height: 100%;
+}
+
+.topnav {
+    background-color: #333;
+}
+
+.navbuttons{
+    font-family: 'Diavlo', Arial, Helvetica, sans-serif;
+    color: goldenrod;
+    position: relative;
 }

@@ -1,23 +1,19 @@
 <div class="banner">
-    <h1 class= "welcome">Welcome Tenno</h1>
+    <h1 class= "welcome">Tenno Info</h1>
 </div>
-<div  ng-controller="listController">
-    <ul>
+<div ng-controller="userListController">
+   <ul>
         <li class="posts" style="border: 2px solid goldenrod; border-right-width:20px; margin-top: 5px" ng-repeat="post in data">
-
-            <p class= "message">Tenno: {{post.alias}}</p>
-            <p class= "message">User: {{post.user}}</p>
-            <p class= "listinfo">Message: {{post.message}}</p>
             
-                <button ng-click="getId(post.id)" type="submit" value="submit" class="optionbutton">[View post]</button>
-                <button ng-click="remove(post.id)" type="submit" value="submit" class="optionbutton">[Delete]</button>
+            <p class= "message">User: {{post.user}}</p>
+            <p class= "message">Tenno: {{post.alias}}</p>
+            <p class= "listinfo">Message: {{post.message}}</p>
+            <button ng-click="getId(post.id)" type="submit" value="submit" class="optionbutton">[View post]</button>
         </li>
-    </ul>
+    </ul>    
+            <button ng-click="removeuser(post.user)" type="submit" value="submit" class="optionbutton">[Delete]</button>        
+    
 </div>
-
-<a href="#/add">
-        <button type="submit" value="submit" class="frontdoor" class="frontdoor">Add a post</button>
-</a>
 
 <div class="center">
     <a href="https://www.reddit.com/r/Warframe/">

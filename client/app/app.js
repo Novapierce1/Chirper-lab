@@ -14,6 +14,12 @@ app.config(function($routeProvider){
     .when("/single/:id", {
         templateUrl: "../views/single.html",
     })
+    .when("/users/", {
+        templateUrl: "../views/users.html"
+    })
+    .when("/user/:user", {
+        templateUrl: "../views/userposts.html"
+    })
 });
 
 app.controller('addController', function($scope,$http) {
@@ -23,8 +29,7 @@ app.controller('addController', function($scope,$http) {
             alias : $scope.alias,
             message : $scope.message
         });
-        console.log(info)
-    $http.post('http://localhost:3000/api/chirps', info)
+    $http.post('http://localhost:3000/api/chirps/', info)
         .then(function(response){ 
             alert('Hello Tenno');
         }, function myError(response){
@@ -35,19 +40,22 @@ app.controller('addController', function($scope,$http) {
 });
 
 app.controller('listController',  function($http, $scope, $location){
-    $http.get('http://localhost:3000/api/chirps')
+    $http.get('http://localhost:3000/api/chirps/')
        .then(function(success){
         $scope.data=success.data
     },  function(err){
         alert('something went wrong')
     })
     $scope.getId=function(id){
-        console.log(id)
         $location.path('/single/' + id)
     }
 
+    $scope.getUserPosts=function(user){
+        $location.path('/user/' + user)
+    }
+
     $scope.remove=function(id){
-    $http.delete('http://localhost:3000/api/chirps/' + id)
+    $http.delete('http://localhost:3000/api/chirps/one/' + id)
         .then(function(success){
          $location.path('/list/');
         }
@@ -57,14 +65,55 @@ app.controller('listController',  function($http, $scope, $location){
 
 app.controller('singleController',  function($http, $scope, $routeParams, $window, $location){
     var id = $routeParams.id;
-    $http.get('http://localhost:3000/api/chirps/' + id)
+    $http.get('http://localhost:3000/api/chirps/one/' + id)
     .then(function(success){
         $scope.data=success.data
     });
     $scope.remove=function(id){
-    $http.delete('http://localhost:3000/api/chirps/' + id)
+    $http.delete('http://localhost:3000/api/chirps/one/' + id)
         .then(function(success){
         $location.path('/list/');;
         }
         )}
     })
+
+app.controller('userController',  function($http, $scope, $location){
+    $http.get('http://localhost:3000/api/users/')
+       .then(function(response){
+        $scope.data=response.data
+    },  function(err){
+        alert('something went wrong')
+        
+    })
+    $scope.getUserPosts=function(user) {
+        $location.path('/user/' + user)
+    }
+});
+
+app.controller('userListController',  function($routeParams, $http, $scope, $location){
+    var user = $routeParams.user;
+    $http.get('http://localhost:3000/api/chirps/user/' + user)
+       .then(function(response){
+        $scope.data=response.data
+    },  function(err){
+        alert('something went wrong')
+    })
+    $scope.getId=function(id){
+        $location.path('/single/' + id)
+    }
+
+    $scope.getUserPosts=function(user){
+        $location.path('/user/' + user)
+    }
+
+    $scope.removeuser=function(user){
+    $http.delete('http://localhost:3000/api/chirps/user/' + user)
+        .then(function(success){
+            alert('Good bye Tenno...(user deleted)')
+            $location.path('/list/');
+        }, function(err){
+            alert('The Stalker stopped your excape! (ERROR)')
+        }
+        )}
+    
+}); 
