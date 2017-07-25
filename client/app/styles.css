@@ -1,7 +1,8 @@
 
 
 .banner{
-    background-image: url(http://eachdaypaid.com/wp-content/uploads/2014/12/carbon-fiber-1024x576.png)
+    background-image: url(http://eachdaypaid.com/wp-content/uploads/2014/12/carbon-fiber-1024x576.png);
+    background-size:cover;
 }
 
 .navbuttons{
@@ -10,10 +11,13 @@
 
 .optionbutton {
     background-image: url(https://static1.squarespace.com/static/5526613ce4b096c584414d38/t/55271cf6e4b0c120ebd9d53c/1428626678936/Grey-Banner-Large-940434-3-21-2013.jpg?format=1500w);
+    background-size:cover;
     font-size: 15px;
     border: 2px goldenrod;
     border-style: dotted solid;
     border-radius: 15px;
+    padding: 1em;
+    text-decoration: none;
 }
 
 .welcome {
@@ -128,7 +132,7 @@
 }
 
 .topnav {
-    background-color: #333;
+    background-image: url(http://eachdaypaid.com/wp-content/uploads/2014/12/carbon-fiber-1024x576.png);
 }
 
 .navbuttons{
@@ -144,7 +148,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111; 
+    background-image: url(http://eachdaypaid.com/wp-content/uploads/2014/12/carbon-fiber-1024x576.png);
     overflow-x: hidden; 
     padding-top: 60px; 
     transition: 0.5s;
@@ -169,6 +173,11 @@
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+}
+
+.symbol{
+    height: 250px;
+    width: 260px;
 }
 
 #main {
