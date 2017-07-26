@@ -11,7 +11,7 @@
 
 .optionbutton {
     background-image: url(https://static1.squarespace.com/static/5526613ce4b096c584414d38/t/55271cf6e4b0c120ebd9d53c/1428626678936/Grey-Banner-Large-940434-3-21-2013.jpg?format=1500w);
-    background-size:cover;
+    color: goldenrod;
     font-size: 15px;
     border: 2px goldenrod;
     border-style: dotted solid;
@@ -126,6 +126,7 @@
 
 .posts{
     background-image: url(https://static1.squarespace.com/static/5526613ce4b096c584414d38/t/55271cf6e4b0c120ebd9d53c/1428626678936/Grey-Banner-Large-940434-3-21-2013.jpg?format=1500w);
+    background-size:cover;
     height: 100%;
     border-radius: 15px;
     padding: 10px;
